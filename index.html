@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIT-HUB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-search">
+    <div class="container-search-card-body">
+      <h3 id="search-github-users">SEARCH GITHUB USERS</h3>
+      <p class="lead">
+        Enter a username and access the user's information
+      </p>
+      <form id="github-form">
+        <input type="text" name="githubname" id="githubname" class="form-control" placeholder="Github User Name">
+        <br>
+        <button type="submit" class="button" id="search-button">Search</button>
+      </form>
+      <br><br>
+    </div>
+    <br>
+
+    <div id="profile">
+    </div>
+    <h3 class="page">The last repos</h3>
+    <div id="repos">
+    </div>
+    <h3 class="page">The last searches</h3>
+
+    <div id="lastSearch">
+      <ul class="list-group" id="last-users"></ul>
+      <hr>
+      <button id="clear-last-users" class="button">Clean the last searches</button>
+
+    </div>
+  </div>
+
+  <script src="storage.js"></script>
+
+  <script src="ui.js"></script>
+  <script src="github.js"></script>
+  <script src="app.js"></script>
+
+
+
+
+</body>
+
+</html>
